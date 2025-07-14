@@ -2,41 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Futuristic Dark Theme Design System - Neon Aesthetics */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark theme base colors */
+    --background: 222 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Cards with subtle transparency */
+    --card: 222 84% 6%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 222 84% 6%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Neon primary - Electric Blue */
+    --primary: 220 100% 60%;
+    --primary-foreground: 222 84% 4.9%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Neon secondary - Purple */
+    --secondary: 280 100% 70%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted dark tones */
+    --muted: 217 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Neon accent - Teal */
+    --accent: 175 100% 60%;
+    --accent-foreground: 222 84% 4.9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 217 32.6% 17.5%;
+    --input: 217 32.6% 17.5%;
+    --ring: 220 100% 60%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    
+    /* Neon color palette */
+    --neon-blue: 220 100% 60%;
+    --neon-purple: 280 100% 70%;
+    --neon-teal: 175 100% 60%;
+    --neon-magenta: 320 100% 75%;
+    --neon-violet: 260 100% 70%;
+    --neon-green: 120 100% 60%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--neon-blue)), hsl(var(--neon-purple)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--neon-teal)), hsl(var(--neon-magenta)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--neon-purple)), hsl(var(--neon-violet)));
+    
+    /* Shadows and glows */
+    --glow-primary: 0 0 20px hsl(var(--neon-blue) / 0.5);
+    --glow-secondary: 0 0 20px hsl(var(--neon-purple) / 0.5);
+    --glow-accent: 0 0 20px hsl(var(--neon-teal) / 0.5);
+    --glow-magenta: 0 0 20px hsl(var(--neon-magenta) / 0.5);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: box-shadow 0.3s ease;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +128,56 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  /* Custom utility classes */
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+  
+  .glow-secondary {
+    box-shadow: var(--glow-secondary);
+  }
+  
+  .glow-accent {
+    box-shadow: var(--glow-accent);
+  }
+  
+  .glow-magenta {
+    box-shadow: var(--glow-magenta);
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .transition-glow {
+    transition: var(--transition-glow);
+  }
+  
+  .neon-border {
+    border: 1px solid hsl(var(--neon-blue) / 0.3);
+  }
+  
+  .neon-border-purple {
+    border: 1px solid hsl(var(--neon-purple) / 0.3);
+  }
+  
+  .neon-border-teal {
+    border: 1px solid hsl(var(--neon-teal) / 0.3);
+  }
+  
+  .backdrop-glow {
+    backdrop-filter: blur(20px);
+    background: hsl(var(--card) / 0.8);
   }
 }
