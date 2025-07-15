@@ -144,6 +144,23 @@ export default function About() {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Certifications */}
+            <Card className="bg-card neon-border animate-fade-in" style={{ animationDelay: '0.5s' }}>
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-semibold mb-6 gradient-primary bg-clip-text text-transparent">
+                  Certifications
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                  <li>
+                    <span className="font-bold text-foreground">Google Cloud:</span> Infrastructure and Application Modernization
+                  </li>
+                  <li>
+                    <span className="font-bold text-foreground">Google Cloud:</span> Introduction to Digital Transformation with Google Cloud
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>

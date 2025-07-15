@@ -8,6 +8,7 @@ import webApp1 from "@/assets/web-app-1.jpg";
 import photography1 from "@/assets/photography-1.jpg";
 import kadJobImg from "@/assets/KADJOB.png";
 import logoInquizo from "@/assets/LOGO.264Z.png";
+import weatherAppImg from "@/assets/WEATHERPP.png";
 
 const portfolioSections = [
   {
@@ -23,7 +24,7 @@ const portfolioSections = [
       {
         title: "Weather Image Detection App",
         category: "Image Classification",
-        image: mlProject1,
+        image: weatherAppImg,
         description: "Developed a real-time weather classification app using InceptionV3, VGG19, and Streamlit. Enhanced image detection accuracy with deep learning architectures and efficient data pipelines."
       },
       {

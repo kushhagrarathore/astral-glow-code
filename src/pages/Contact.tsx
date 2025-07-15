@@ -88,7 +88,7 @@ export default function Contact() {
                     <span className="group-hover:text-primary">GitHub</span>
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/kushagra-rathore-806124199/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-4 p-3 rounded-lg hover:bg-muted transition-all duration-300 hover:glow-secondary group"

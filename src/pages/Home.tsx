@@ -1,17 +1,31 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ArrowRight } from "lucide-react";
+import React, { useEffect, useState } from "react";
 
 export default function Home() {
+  // Typewriter animation for the heading
+  const fullText = "Hi, I'm Kushagra Rathore";
+  const [displayed, setDisplayed] = useState("");
+  useEffect(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+      setDisplayed(fullText.slice(0, i + 1));
+      i++;
+      if (i === fullText.length) clearInterval(interval);
+    }, 60);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen flex items-center justify-center px-6 pt-20">
       <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
         {/* Hero Section */}
         <div className="space-y-6">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            Hi, I'm{" "}
-            <span className="gradient-primary bg-clip-text text-transparent">
-              Kushagra Rathore
+            <span>
+              {displayed}
+              <span className="animate-pulse">|</span>
             </span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-muted-foreground">
