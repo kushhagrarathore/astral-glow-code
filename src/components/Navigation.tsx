@@ -8,7 +8,6 @@ const navItems = [
   { name: "Portfolio", path: "/portfolio" },
   { name: "Skills", path: "/skills" },
   { name: "About", path: "/about" },
-  { name: "Blog", path: "/blog" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -22,7 +21,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">
-            Atharva Gour
+            Kushagra Rathore
           </Link>
 
           {/* Desktop Navigation */}

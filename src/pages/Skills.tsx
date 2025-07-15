@@ -1,16 +1,34 @@
 import { Card, CardContent } from "@/components/ui/card";
 
 const skills = [
+  // Programming Languages
+  { name: "Python", category: "Programming Language", color: "neon-blue" },
+  { name: "SQL", category: "Programming Language", color: "neon-blue" },
+  // Frameworks
+  { name: "Matplotlib", category: "Framework", color: "neon-green" },
+  { name: "Pandas", category: "Framework", color: "neon-green" },
+  { name: "TensorFlow", category: "Framework", color: "neon-green" },
+  { name: "Scikit-learn", category: "Framework", color: "neon-green" },
+  // Tools
+  { name: "Power BI", category: "Tool", color: "neon-purple" },
+  { name: "Excel", category: "Tool", color: "neon-purple" },
+  { name: "PowerPoint", category: "Tool", color: "neon-purple" },
+  { name: "MySQL", category: "Tool", color: "neon-purple" },
+  // Platforms
+  { name: "PyCharm", category: "Platform", color: "neon-magenta" },
+  { name: "Jupyter Notebook", category: "Platform", color: "neon-magenta" },
+  { name: "Visual Studio Code", category: "Platform", color: "neon-magenta" },
+  { name: "Google Colab", category: "Platform", color: "neon-magenta" },
+  // Soft Skills
+  { name: "Critical Thinking", category: "Soft Skill", color: "neon-accent" },
+  { name: "Teamwork", category: "Soft Skill", color: "neon-accent" },
+  { name: "Problem-Solving", category: "Soft Skill", color: "neon-accent" },
+  { name: "Communication", category: "Soft Skill", color: "neon-accent" },
   { name: "Swift", category: "iOS", color: "neon-blue" },
   { name: "SwiftUI", category: "iOS", color: "neon-blue" },
   { name: "UIKit", category: "iOS", color: "neon-blue" },
   { name: "Xcode", category: "iOS", color: "neon-blue" },
   { name: "Combine", category: "iOS", color: "neon-blue" },
-  { name: "Python", category: "ML", color: "neon-green" },
-  { name: "TensorFlow", category: "ML", color: "neon-green" },
-  { name: "PyTorch", category: "ML", color: "neon-green" },
-  { name: "CoreML", category: "ML", color: "neon-green" },
-  { name: "Jupyter", category: "ML", color: "neon-green" },
   { name: "React", category: "Frontend", color: "neon-teal" },
   { name: "Next.js", category: "Frontend", color: "neon-teal" },
   { name: "TypeScript", category: "Frontend", color: "neon-teal" },

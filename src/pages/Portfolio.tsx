@@ -6,65 +6,30 @@ import iosApp1 from "@/assets/ios-app-1.jpg";
 import mlProject1 from "@/assets/ml-project-1.jpg";
 import webApp1 from "@/assets/web-app-1.jpg";
 import photography1 from "@/assets/photography-1.jpg";
+import kadJobImg from "@/assets/KADJOB.png";
 
 const portfolioSections = [
-  {
-    id: "ios",
-    title: "iOS Development",
-    projects: [
-      {
-        title: "HealthTracker Pro",
-        category: "SwiftUI App",
-        image: iosApp1,
-        description: "Comprehensive health tracking with CoreML integration"
-      },
-      {
-        title: "TaskFlow",
-        category: "UIKit App",
-        image: iosApp1,
-        description: "Productivity app with advanced animations"
-      },
-      {
-        title: "CryptoWallet",
-        category: "SwiftUI App",
-        image: iosApp1,
-        description: "Secure cryptocurrency wallet with biometric auth"
-      },
-      {
-        title: "PhotoEditor AI",
-        category: "CoreML App",
-        image: iosApp1,
-        description: "AI-powered photo editing with real-time filters"
-      }
-    ]
-  },
   {
     id: "ml",
     title: "Machine Learning",
     projects: [
       {
-        title: "Neural Style Transfer",
-        category: "Computer Vision",
+        title: "Music Genre Classification (ML Project)",
+        category: "Audio Classification",
         image: mlProject1,
-        description: "Real-time artistic style transfer using TensorFlow"
+        description: "Built a machine learning model for music genre classification using MFCCs, Spectrograms, and Tempo Analysis. Implemented feature extraction and classification with Python, TensorFlow, and Librosa. Improved model accuracy through advanced preprocessing and hyperparameter tuning."
       },
       {
-        title: "Sentiment Analysis API",
-        category: "NLP",
+        title: "Weather Image Detection App",
+        category: "Image Classification",
         image: mlProject1,
-        description: "Multi-language sentiment analysis with BERT"
+        description: "Developed a real-time weather classification app using InceptionV3, VGG19, and Streamlit. Enhanced image detection accuracy with deep learning architectures and efficient data pipelines."
       },
       {
-        title: "Recommendation Engine",
-        category: "Deep Learning",
-        image: mlProject1,
-        description: "Collaborative filtering for e-commerce platforms"
-      },
-      {
-        title: "Anomaly Detection",
-        category: "Time Series",
-        image: mlProject1,
-        description: "IoT sensor data anomaly detection system"
+        title: "KAD Job Scouts",
+        category: "Job Recommendation Platform",
+        image: kadJobImg,
+        description: "KAD Job Scouts is a comprehensive job recommendation platform that transforms how job seekers and recruiters connect. By combining artificial intelligence with intuitive user experience design, the platform delivers personalized job matching that goes beyond traditional keyword searches."
       }
     ]
   },
@@ -72,66 +37,13 @@ const portfolioSections = [
     id: "fullstack",
     title: "Full Stack Development",
     projects: [
-      {
-        title: "SaaS Dashboard",
-        category: "React + Node.js",
-        image: webApp1,
-        description: "Analytics platform with real-time data visualization"
-      },
-      {
-        title: "E-commerce Platform",
-        category: "Next.js + MongoDB",
-        image: webApp1,
-        description: "Modern e-commerce with advanced search and recommendations"
-      },
-      {
-        title: "Collaboration Tool",
-        category: "React + PostgreSQL",
-        image: webApp1,
-        description: "Team collaboration platform with real-time features"
-      },
-      {
-        title: "Learning Management",
-        category: "Vue.js + Express",
-        image: webApp1,
-        description: "Educational platform with video streaming and assessments"
-      }
-    ]
-  },
-  {
-    id: "photography",
-    title: "Photography",
-    projects: [
-      {
-        title: "Urban Landscapes",
-        category: "Architecture",
-        image: photography1,
-        description: "Capturing the beauty of modern cityscapes"
-      },
-      {
-        title: "Portrait Series",
-        category: "People",
-        image: photography1,
-        description: "Intimate portraits with dramatic lighting"
-      },
-      {
-        title: "Nature Collection",
-        category: "Landscape",
-        image: photography1,
-        description: "Breathtaking natural scenes and wildlife"
-      },
-      {
-        title: "Street Photography",
-        category: "Documentary",
-        image: photography1,
-        description: "Candid moments from everyday life"
-      }
+      // All projects removed
     ]
   }
 ];
 
 export default function Portfolio() {
-  const [activeSection, setActiveSection] = useState("ios");
+  const [activeSection, setActiveSection] = useState("ml");
 
   const currentSection = portfolioSections.find(section => section.id === activeSection);
 
@@ -184,7 +96,7 @@ export default function Portfolio() {
                       <img
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                        className={`w-full h-48 transition-transform duration-300 group-hover:scale-110 ${project.title === 'KAD Job Scouts' ? 'object-contain bg-white' : 'object-cover'}`}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div className="absolute bottom-4 left-4 right-4 flex gap-2">

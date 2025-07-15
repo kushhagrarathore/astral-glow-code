@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
             Hi, I'm{" "}
             <span className="gradient-primary bg-clip-text text-transparent">
-              Atharva Gour
+              Kushagra Rathore
             </span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-muted-foreground">
@@ -63,7 +63,7 @@ export default function Home() {
             <Linkedin className="h-6 w-6" />
           </a>
           <a 
-            href="mailto:atharva@example.com"
+            href="mailto:kushagrarathore802@gmail.com"
             className="p-3 rounded-full bg-card hover:bg-accent/20 transition-all duration-300 hover:glow-accent"
           >
             <Mail className="h-6 w-6" />

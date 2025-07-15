@@ -55,16 +55,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-sm text-muted-foreground">atharva@example.com</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-4">
-                    <div className="p-3 rounded-lg bg-secondary/20 glow-secondary">
-                      <Phone className="h-5 w-5 text-secondary" />
-                    </div>
-                    <div>
-                      <p className="font-medium">Phone</p>
-                      <p className="text-sm text-muted-foreground">+91 98765 43210</p>
+                      <p className="text-sm text-muted-foreground">kushagrarathore802@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -73,7 +64,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-medium">Location</p>
-                      <p className="text-sm text-muted-foreground">Mumbai, India</p>
+                      <p className="text-sm text-muted-foreground">Indore, India</p>
                     </div>
                   </div>
                 </div>

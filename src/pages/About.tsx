@@ -61,16 +61,16 @@ export default function About() {
                 <div className="relative inline-block mb-6">
                   <img
                     src={profilePhoto}
-                    alt="Atharva Gour"
+                    alt="Kushagra Rathore"
                     className="w-32 h-32 rounded-full object-cover glow-primary"
                   />
                   <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-20"></div>
                 </div>
-                <h2 className="text-2xl font-bold mb-2">Atharva Gour</h2>
+                <h2 className="text-2xl font-bold mb-2">Kushagra Rathore</h2>
                 <p className="text-muted-foreground mb-4">Developer & Creative Technologist</p>
                 <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground mb-6">
                   <MapPin className="h-4 w-4" />
-                  <span>Mumbai, India</span>
+                  <span>Indore, India</span>
                 </div>
                 <Button className="w-full bg-primary hover:bg-primary/90 glow-primary">
                   <Download className="mr-2 h-4 w-4" />
@@ -106,53 +106,32 @@ export default function About() {
                 </h3>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    With over 5 years of experience in software development, I specialize in creating 
-                    innovative solutions that bridge the gap between cutting-edge technology and 
-                    real-world applications. My journey began with a fascination for mobile development, 
-                    which quickly evolved into a passion for machine learning and full-stack development.
+                    I'm Kushagra Rathore, a dedicated Full Stack Developer, Data Analyst, Machine Learning practitioner, and Startup enthusiast with a passion for building innovative, data-driven solutions.
                   </p>
                   <p>
-                    I believe in the power of technology to transform lives and businesses. Whether it's 
-                    building intuitive iOS applications, developing intelligent ML models, or creating 
-                    scalable web platforms, I approach each project with creativity, precision, and 
-                    a user-first mindset.
+                    I specialize in transforming complex data into actionable insights using tools like Python, SQL, Power BI, Pandas, and Matplotlib. On the development side, I create scalable, high-performance web applications using React, Node.js, Django, and PostgreSQL.
                   </p>
                   <p>
-                    When I'm not coding, you'll find me exploring new photography techniques, 
-                    contributing to open-source projects, or sharing my knowledge through tech talks 
-                    and blog posts. I'm always eager to learn new technologies and take on 
-                    challenging projects that push the boundaries of what's possible.
+                    With a strong foundation in both software engineering and data science, I focus on solving real-world problems at the intersection of technology and business. My enthusiasm for startups drives me to constantly explore new ideas, optimize processes, and contribute to products that create meaningful impact.
+                  </p>
+                  <p>
+                    I’m committed to continuous learning, clean architecture, and delivering measurable results through a blend of technical expertise and entrepreneurial mindset.
                   </p>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Timeline */}
+            {/* Education */}
             <Card className="bg-card neon-border animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-6 gradient-primary bg-clip-text text-transparent">
-                  Career Journey
+                  Education
                 </h3>
-                <div className="space-y-6">
-                  {timeline.map((item, index) => (
-                    <div key={index} className="flex space-x-4">
-                      <div className="flex flex-col items-center">
-                        <div className="w-3 h-3 rounded-full bg-primary glow-primary"></div>
-                        {index < timeline.length - 1 && (
-                          <div className="w-0.5 h-16 bg-border mt-2"></div>
-                        )}
-                      </div>
-                      <div className="flex-1 pb-8">
-                        <div className="flex items-center space-x-2 mb-1">
-                          <Calendar className="h-4 w-4 text-primary" />
-                          <span className="text-sm font-medium text-primary">{item.year}</span>
-                        </div>
-                        <h4 className="text-lg font-semibold">{item.title}</h4>
-                        <p className="text-sm text-secondary mb-2">{item.company}</p>
-                        <p className="text-sm text-muted-foreground">{item.description}</p>
-                      </div>
-                    </div>
-                  ))}
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p className="font-bold">SYMBIOSIS UNIVERSITY OF APPLIED SCIENCES</p>
+                  <p>Bachelor of Technology in Computer Science and Information Technology</p>
+                  <p>CGPA: 8.8</p>
+                  <p>2022 - 2026</p>
                 </div>
               </CardContent>
             </Card>

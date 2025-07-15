@@ -5,15 +5,6 @@ import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
-    id: 1,
-    title: "Building Scalable iOS Apps with SwiftUI and Combine",
-    excerpt: "Learn how to create maintainable and scalable iOS applications using modern SwiftUI patterns and reactive programming with Combine framework.",
-    category: "iOS Development",
-    readTime: "8 min read",
-    date: "2024-01-15",
-    featured: true
-  },
-  {
     id: 2,
     title: "Machine Learning in Production: Best Practices",
     excerpt: "A comprehensive guide to deploying ML models in production environments, covering everything from model versioning to monitoring and scaling.",
@@ -29,24 +20,6 @@ const blogPosts = [
     category: "Web Development",
     readTime: "10 min read",
     date: "2024-01-05",
-    featured: false
-  },
-  {
-    id: 4,
-    title: "The Art of Technical Photography",
-    excerpt: "Exploring the intersection of technology and photography, from computational photography to AI-enhanced image processing techniques.",
-    category: "Photography",
-    readTime: "6 min read",
-    date: "2023-12-28",
-    featured: false
-  },
-  {
-    id: 5,
-    title: "CoreML Integration: From Model to App Store",
-    excerpt: "A step-by-step guide to integrating machine learning models into iOS apps using CoreML, including optimization and performance tips.",
-    category: "iOS Development",
-    readTime: "15 min read",
-    date: "2023-12-20",
     featured: false
   },
   {
