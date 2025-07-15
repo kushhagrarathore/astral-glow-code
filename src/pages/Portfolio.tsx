@@ -7,6 +7,7 @@ import mlProject1 from "@/assets/ml-project-1.jpg";
 import webApp1 from "@/assets/web-app-1.jpg";
 import photography1 from "@/assets/photography-1.jpg";
 import kadJobImg from "@/assets/KADJOB.png";
+import logoInquizo from "@/assets/LOGO.264Z.png";
 
 const portfolioSections = [
   {
@@ -37,7 +38,13 @@ const portfolioSections = [
     id: "fullstack",
     title: "Full Stack Development",
     projects: [
-      // All projects removed
+      {
+        title: "INQUIZO",
+        category: "Web Platform",
+        image: logoInquizo,
+        description: "INQUIZO is an innovative web platform that empowers users to effortlessly create, customize, and share interactive quizzes and forms. Leveraging the power of Google Gemini AI, users can instantly generate high-quality, multiple-choice quizzes on any topic, or build their own with a flexible drag-and-drop editor.\n\n\u26A0\ufe0f This project is currently in the building phase. Stay tuned for updates!",
+        building: true
+      }
     ]
   }
 ];
@@ -115,6 +122,9 @@ export default function Portfolio() {
                         <Badge variant="secondary" className="neon-border-purple">
                           {project.category}
                         </Badge>
+                        {project.building && (
+                          <span className="ml-2 px-2 py-1 text-xs rounded bg-yellow-200 text-yellow-800 font-semibold animate-pulse">Building</span>
+                        )}
                       </div>
                       <p className="text-sm text-muted-foreground">{project.description}</p>
                     </div>

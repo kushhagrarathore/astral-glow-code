@@ -58,14 +58,6 @@ export default function About() {
           <div className="lg:col-span-1 space-y-8">
             <Card className="bg-card neon-border animate-fade-in">
               <CardContent className="p-8 text-center">
-                <div className="relative inline-block mb-6">
-                  <img
-                    src={profilePhoto}
-                    alt="Kushagra Rathore"
-                    className="w-32 h-32 rounded-full object-cover glow-primary"
-                  />
-                  <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-20"></div>
-                </div>
                 <h2 className="text-2xl font-bold mb-2">Kushagra Rathore</h2>
                 <p className="text-muted-foreground mb-4">Developer & Creative Technologist</p>
                 <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground mb-6">
@@ -109,6 +101,9 @@ export default function About() {
                     I'm Kushagra Rathore, a dedicated Full Stack Developer, Data Analyst, Machine Learning practitioner, and Startup enthusiast with a passion for building innovative, data-driven solutions.
                   </p>
                   <p>
+                    Currently working at Orange DataTech Pvt Ltd as a Full Stack Intern.
+                  </p>
+                  <p>
                     I specialize in transforming complex data into actionable insights using tools like Python, SQL, Power BI, Pandas, and Matplotlib. On the development side, I create scalable, high-performance web applications using React, Node.js, Django, and PostgreSQL.
                   </p>
                   <p>
@@ -132,6 +127,20 @@ export default function About() {
                   <p>Bachelor of Technology in Computer Science and Information Technology</p>
                   <p>CGPA: 8.8</p>
                   <p>2022 - 2026</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Internship */}
+            <Card className="bg-card neon-border animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-semibold mb-6 gradient-primary bg-clip-text text-transparent">
+                  Internship
+                </h3>
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p className="font-bold">Orange DataTech Pvt Ltd</p>
+                  <p>Full Stack Intern</p>
+                  <p>June 2025 - Present</p>
                 </div>
               </CardContent>
             </Card>
